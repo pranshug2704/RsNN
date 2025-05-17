@@ -68,7 +68,7 @@ def vgg16(input_shape, num_classes, final_activation):
     return model
 
 
-def wideresnet2810(input_shape, num_classes, final_activation, depth, width_factor, mod=True):
+def wideresnet2810(input_shape, num_classes, final_activation, depth=28, width_factor=6, mod=True):
     n = (depth - 4) // 6
     num_filters = 16 * width_factor
 
